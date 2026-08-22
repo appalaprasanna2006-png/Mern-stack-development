@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyVista Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.4/css/all.min.css" integrity="sha512-qL3h6VLL6EAgs7N7n5T0x2pG+8n+Qstf10uGXn1D8KmZdX76sf+XY7dHq74Qev09Gn2per6Zqbx04xPjC1S1eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+  <div class="page-wrapper">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand">
+          <div class="brand__icon"><i class="fa-solid fa-cloud-bolt"></i></div>
+          <div>
+            <span class="brand__name">SkyVista</span>
+            <span class="brand__tag">Weather Pulse</span>
+          </div>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" />
+        <label for="menu-toggle" class="menu-button" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#weather">Weather</a>
+          <a href="#forecast">Forecast</a>
+          <a href="#air-quality">Air Quality</a>
+          <a href="#news">News</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy animate-fade-up">
+            <span class="eyebrow">Cloud-powered insight</span>
+            <h1>Premium weather intelligence with bold cloud imagery</h1>
+            <p>SkyVista brings modern weather interface design, dramatic visuals, and polished forecasts together in a responsive cloud-inspired experience.</p>
+            <form class="search-panel" action="#" aria-label="Search city weather">
+              <input type="text" name="search" placeholder="Search city, region or ZIP" aria-label="Search weather location" />
+              <button type="submit">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="hero-status">
+              <div>
+                <p>Location</p>
+                <h2>Seattle</h2>
+              </div>
+              <div class="badge"><i class="fa-solid fa-cloud"></i> Cloudy</div>
+            </div>
+            <div class="hero-quick">
+              <article class="mini-card">
+                <p>Feels Like</p>
+                <strong>18°C</strong>
+              </article>
+              <article class="mini-card">
+                <p>Humidity</p>
+                <strong>78%</strong>
+              </article>
+              <article class="mini-card">
+                <p>Wind</p>
+                <strong>22 km/h</strong>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-image animate-fade-up delay-1">
+            <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80" alt="Cloudy sky over mountains" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="weather">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">Current Weather</span>
+            <h2>Live atmospheric metrics</h2>
+            <p>See the most important weather data presented clearly with glass-like cards and a premium dark theme.</p>
+          </div>
+        </div>
+
+        <div class="container card-grid weather-cards">
+          <article class="info-card hover-glow">
+            <div class="card-icon"><i class="fa-solid fa-temperature-half"></i></div>
+            <h3>Temperature</h3>
+            <p>18°C</p>
+          </article>
+          <article class="info-card hover-glow">
+            <div class="card-icon"><i class="fa-solid fa-droplet"></i></div>
+            <h3>Humidity</h3>
+            <p>78%</p>
+          </article>
+          <article class="info-card hover-glow">
+            <div class="card-icon"><i class="fa-solid fa-wind"></i></div>
+            <h3>Wind Speed</h3>
+            <p>22 km/h</p>
+          </article>
+          <article class="info-card hover-glow">
+            <div class="card-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3>Pressure</h3>
+            <p>1014 hPa</p>
+          </article>
+          <article class="info-card hover-glow">
+            <div class="card-icon"><i class="fa-solid fa-eye"></i></div>
+            <h3>Visibility</h3>
+            <p>11 km</p>
+          </article>
+          <article class="info-card hover-glow">
+            <div class="card-icon"><i class="fa-solid fa-temperature-quarter"></i></div>
+            <h3>Feels Like</h3>
+            <p>17°C</p>
+          </article>
+          <article class="info-card hover-glow">
+            <div class="card-icon"><i class="fa-solid fa-sunrise"></i></div>
+            <h3>Sunrise</h3>
+            <p>06:15 AM</p>
+          </article>
+          <article class="info-card hover-glow">
+            <div class="card-icon"><i class="fa-solid fa-sunset"></i></div>
+            <h3>Sunset</h3>
+            <p>08:58 PM</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="forecast">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">7-Day Forecast</span>
+            <h2>Cloud cover outlook</h2>
+            <p>Plan your week with a refined forecast display built for fast reading and polished detail.</p>
+          </div>
+        </div>
+
+        <div class="container forecast-grid">
+          <article class="forecast-card hover-lift forecast-card--mon">
+            <span>Mon</span>
+            <strong>19°C</strong>
+            <p>Partly cloudy</p>
+          </article>
+          <article class="forecast-card hover-lift forecast-card--tue">
+            <span>Tue</span>
+            <strong>16°C</strong>
+            <p>Rain showers</p>
+          </article>
+          <article class="forecast-card hover-lift forecast-card--wed">
+            <span>Wed</span>
+            <strong>15°C</strong>
+            <p>Cool night</p>
+          </article>
+          <article class="forecast-card hover-lift forecast-card--thu">
+            <span>Thu</span>
+            <strong>20°C</strong>
+            <p>Bright breaks</p>
+          </article>
+          <article class="forecast-card hover-lift forecast-card--fri">
+            <span>Fri</span>
+            <strong>18°C</strong>
+            <p>Thunder risk</p>
+          </article>
+          <article class="forecast-card hover-lift forecast-card--sat">
+            <span>Sat</span>
+            <strong>17°C</strong>
+            <p>Mixed skies</p>
+          </article>
+          <article class="forecast-card hover-lift forecast-card--sun">
+            <span>Sun</span>
+            <strong>21°C</strong>
+            <p>Sunny spells</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="air-quality">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">Air Quality</span>
+            <h2>Clean air insights</h2>
+            <p>Monitor critical air metrics with modern progress visuals and accessible status descriptions.</p>
+          </div>
+        </div>
+
+        <div class="container quality-grid">
+          <article class="quality-card">
+            <div class="quality-card__top">
+              <h3>AQI</h3>
+              <span>45</span>
+            </div>
+            <p>Good air quality for outdoor activities.</p>
+            <div class="progress-bar"><span style="width: 45%;"></span></div>
+          </article>
+          <article class="quality-card">
+            <div class="quality-card__top">
+              <h3>PM2.5</h3>
+              <span>14 µg/m³</span>
+            </div>
+            <p>Moderate particulate levels.</p>
+            <div class="progress-bar"><span style="width: 28%;"></span></div>
+          </article>
+          <article class="quality-card">
+            <div class="quality-card__top">
+              <h3>PM10</h3>
+              <span>25 µg/m³</span>
+            </div>
+            <p>Good visibility and low dust.</p>
+            <div class="progress-bar"><span style="width: 24%;"></span></div>
+          </article>
+          <article class="quality-card">
+            <div class="quality-card__top">
+              <h3>CO</h3>
+              <span>0.4 ppm</span>
+            </div>
+            <p>Safe carbon monoxide level.</p>
+            <div class="progress-bar"><span style="width: 18%;"></span></div>
+          </article>
+          <article class="quality-card">
+            <div class="quality-card__top">
+              <h3>NO₂</h3>
+              <span>16 ppb</span>
+            </div>
+            <p>Low nitrogen dioxide concentration.</p>
+            <div class="progress-bar"><span style="width: 22%;"></span></div>
+          </article>
+          <article class="quality-card">
+            <div class="quality-card__top">
+              <h3>Ozone</h3>
+              <span>35 ppb</span>
+            </div>
+            <p>Balanced ozone levels for today.</p>
+            <div class="progress-bar"><span style="width: 30%;"></span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="highlights">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">Weather Highlights</span>
+            <h2>Essential day details</h2>
+            <p>Quick access to the most meaningful weather factors for safer and smarter planning.</p>
+          </div>
+        </div>
+
+        <div class="container highlights-grid">
+          <article class="highlight-card hover-lift">
+            <i class="fa-solid fa-sun"></i>
+            <h3>UV Index</h3>
+            <p>Moderate — use light protection outdoors.</p>
+          </article>
+          <article class="highlight-card hover-lift">
+            <i class="fa-solid fa-sunrise"></i>
+            <h3>Sunrise</h3>
+            <p>06:15 AM</p>
+          </article>
+          <article class="highlight-card hover-lift">
+            <i class="fa-solid fa-sunset"></i>
+            <h3>Sunset</h3>
+            <p>08:58 PM</p>
+          </article>
+          <article class="highlight-card hover-lift">
+            <i class="fa-solid fa-moon"></i>
+            <h3>Moon Phase</h3>
+            <p>Waning gibbous</p>
+          </article>
+          <article class="highlight-card hover-lift">
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <h3>Rain Chance</h3>
+            <p>42% chance this evening.</p>
+          </article>
+          <article class="highlight-card hover-lift">
+            <i class="fa-solid fa-cloud"></i>
+            <h3>Cloud Cover</h3>
+            <p>68% cloud cover across the region.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="news">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">Weather News</span>
+            <h2>Current weather stories</h2>
+            <p>Stay informed with curated updates and weather-related recommendations for every season.</p>
+          </div>
+        </div>
+
+        <div class="container news-grid">
+          <article class="news-card hover-glow">
+            <div class="news-image news-image--one" aria-hidden="true"></div>
+            <div class="news-content">
+              <span>Storm Alert</span>
+              <h3>Preparing for evening clouds</h3>
+              <p>Follow our quick checklist for safe travel and strong weather readiness.</p>
+              <a href="#" class="button button--ghost">Read More</a>
+            </div>
+          </article>
+          <article class="news-card hover-glow">
+            <div class="news-image news-image--two" aria-hidden="true"></div>
+            <div class="news-content">
+              <span>Sky Watch</span>
+              <h3>Best cloud-watching spots in the city</h3>
+              <p>Discover peaceful locations for capturing cloud formations and crisp skies.</p>
+              <a href="#" class="button button--ghost">Read More</a>
+            </div>
+          </article>
+          <article class="news-card hover-glow">
+            <div class="news-image news-image--three" aria-hidden="true"></div>
+            <div class="news-content">
+              <span>Air Quality</span>
+              <h3>Humidity and healthy air tips</h3>
+              <p>Learn how to maintain indoor comfort when humidity shifts throughout the day.</p>
+              <a href="#" class="button button--ghost">Read More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="tips">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">Safety Tips</span>
+            <h2>Weather-smart habits</h2>
+            <p>Practical tips that keep your day safe and comfortable no matter what the sky brings.</p>
+          </div>
+        </div>
+
+        <div class="container tips-grid">
+          <article class="tip-card hover-lift">
+            <div class="tip-icon"><i class="fa-solid fa-hands-water"></i></div>
+            <h3>Stay Hydrated</h3>
+            <p>Carry water during warm weather and after outdoor exercise.</p>
+          </article>
+          <article class="tip-card hover-lift">
+            <div class="tip-icon"><i class="fa-solid fa-umbrella"></i></div>
+            <h3>Pack a Rain Kit</h3>
+            <p>Keep a compact umbrella and lightweight rain jacket nearby.</p>
+          </article>
+          <article class="tip-card hover-lift">
+            <div class="tip-icon"><i class="fa-solid fa-temperature-high"></i></div>
+            <h3>Mind Heat Waves</h3>
+            <p>Avoid peak heat hours and rest in shaded areas.</p>
+          </article>
+          <article class="tip-card hover-lift">
+            <div class="tip-icon"><i class="fa-solid fa-snowflake"></i></div>
+            <h3>Winter Layers</h3>
+            <p>Dress in warm layers and protect extremities from cold.</p>
+          </article>
+          <article class="tip-card hover-lift">
+            <div class="tip-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Storm Preparedness</h3>
+            <p>Stay indoors during lightning and unplug sensitive electronics.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div class="about-copy animate-fade-up">
+            <span class="eyebrow">About SkyVista</span>
+            <h2>Designed for clear weather decisions</h2>
+            <p>SkyVista is a modern weather concept built with HTML5 and CSS3, designed to blend premium visuals with strong usability.</p>
+            <ul>
+              <li>Mission: Make weather insight feel effortless and elegant.</li>
+              <li>Features: Live metrics, forecast, air quality, news, and safety tips.</li>
+              <li>Technology: Pure HTML, CSS, and responsive design for all devices.</li>
+            </ul>
+          </div>
+          <div class="about-image animate-fade-up delay-1">
+            <img src="https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=1200&q=80" alt="Clouds drifting over a city horizon" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy animate-fade-up">
+            <span class="eyebrow">Contact Us</span>
+            <h2>Share your weather feedback</h2>
+            <p>Whether you want interface updates or weather insights, our contact form is ready for your message.</p>
+          </div>
+          <form class="contact-form animate-fade-up delay-1" action="#" method="post">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class="button button--primary">Submit Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#home" class="brand brand--footer">
+            <div class="brand__icon"><i class="fa-solid fa-cloud-bolt"></i></div>
+            <div>
+              <span class="brand__name">SkyVista</span>
+              <span class="brand__tag">Weather Pulse</span>
+            </div>
+          </a>
+          <p>Modern weather UI built for clarity, performance, and premium presentation.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="#weather">Weather</a>
+          <a href="#forecast">Forecast</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <p>© 2026 SkyVista Weather. All rights reserved.</p>
+        <a href="#top" class="back-to-top">Back to Top</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
