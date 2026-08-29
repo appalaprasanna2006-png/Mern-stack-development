@@ -40,7 +40,7 @@ const jobOpenings=[
  tag1:"Remote",
  tag2:"Senior level",
  pay:"$30000",
- location:"",
+ location:"Hyderabad",
   },
 ];
 
