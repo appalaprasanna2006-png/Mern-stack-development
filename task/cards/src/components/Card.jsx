@@ -1,0 +1,31 @@
+import React from 'react'
+const Card = (props) => {
+    return (
+        <div className='card'>
+            <div>
+                <div className="top">
+                    <img src={props.img} alt="" />
+                    {/* <button>Save <Bookmark size={10} /></button> */}
+                </div>
+          
+                {/* <div className="center">
+                    <h3>{props.company}<span>{props.duration}</span></h3>
+                    <h2>{props.role}</h2>  */}
+                    <div className="tag">
+                        <h3>{props.tag1}</h3>
+                        <h2>{props.tag2}</h2>
+                    </div>
+            
+                 {/* <div className="bottom">
+                    <div>
+                        <h3>{props.pay}</h3>
+                        <p>{props.location}</p>
+                    </div>
+                    <button>Apply Now</button>
+                </div>  */}
+            </div>
+         </div>
+    )
+}
+
+export default Card
